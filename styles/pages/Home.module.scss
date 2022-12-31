@@ -2,27 +2,32 @@
   &__main {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: block;
+    position: relative;
   }
 
   &__wrapLogo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% - 100px);
+    margin: 0 auto;
     max-width: 200px;
-    margin-bottom: 1.45rem;
+    transition: all;
+    // margin-bottom: 1.45rem;
+    // animation:  MoveZandomeLogoToTop 1.4s cubic-bezier(0.165, 0.84, 0.44, 1) 4s both;
 
     path {
       fill-opacity: 0;
-      stroke-width: 6px;
+      stroke-width: 8px;
       stroke: #cbcbcb;
       stroke-opacity: 1;
       stroke-dasharray: 1000;
       stroke-dashoffset: 1300;
-      /* transition: all; */
 
-      animation: ADrawStrokeLogoZandome 3.5s linear 700ms both,
-        AColorFillLogoZandome 3s ease-out 2.5s both;
+      animation: ADrawStrokeLogoZandome 3.5s ease-out 700ms both,
+        AColorFillLogoZandome 2s ease-out 3s both,
+        PulseFillZandomeLogo 2.5s ease-out 5s infinite alternate;
     }
   }
 
@@ -64,9 +69,10 @@
   }
   25% {
     stroke-opacity: 1;
+    stroke-width: 4px;
   }
-  90% {
-    stroke-width: 6px;
+  75% {
+    stroke-width: 2px;
   }
   100% {
     stroke-dashoffset: 0;
@@ -75,11 +81,33 @@
   }
 }
 
+@keyframes MoveZandomeLogoToTop {
+  to {
+    top: 50px;
+    max-width: 50px;
+  }
+}
+
 @keyframes AColorFillLogoZandome {
   to {
     fill-opacity: 1;
     stroke-width: 1px;
     stroke-opacity: 0;
+  }
+}
+
+@keyframes PulseFillZandomeLogo {
+  from {
+    fill-opacity: 1;
+    stroke-width: 1px;
+    stroke-opacity: 0;
+  }
+  to {
+    
+    fill-opacity: 0.2;
+    stroke-dashoffset: 1320;
+    stroke-width: 4px;
+    stroke-opacity: 1;
   }
 }
 

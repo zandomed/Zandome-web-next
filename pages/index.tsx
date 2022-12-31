@@ -16,14 +16,14 @@ export default function Home() {
         <div className={styles.Home__wrapLogo}>
           <ZandomeLogo width="100%" height="100%" />
         </div>
-        <div className={styles.Home__wrapText}>
+        {/* <div className={styles.Home__wrapText}>
           <span>
             Comming Soon
             <span className={styles.Home__dot}>.</span>
             <span className={styles.Home__dot}>.</span>
             <span className={styles.Home__dot}>.</span>
           </span>
-        </div>
+        </div> */}
         {/* <S.WrapperRRSS>
             <SocialNetworks />
           </S.WrapperRRSS> */}
