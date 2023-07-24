@@ -1,11 +1,26 @@
 {
-  "tabWidth": 2,
-  "printWidth": 80,
-  "endOfLine": "auto",
-  "arrowParens": "avoid",
-  "trailingComma": "es5",
   "semi": true,
-  "useTabs": false,
   "singleQuote": true,
-  "bracketSpacing": true
+  "printWidth": 80,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "arrowParens": "always",
+  "jsxSingleQuote": false,
+  "quoteProps": "as-needed",
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "printWidth": 200
+      }
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "printWidth": 80
+      }
+    }
+  ],
+  "plugins": ["prettier-plugin-tailwindcss"]
 }

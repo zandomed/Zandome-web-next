@@ -1,0 +1,14 @@
+{
+  "extends": ["next", "next/core-web-vitals", "plugin:tailwindcss/recommended", "plugin:prettier/recommended"],
+  "plugins": ["import"],
+  "rules": {
+    "prettier/prettier": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+        "newlines-between": "always"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "files.associations": { "*.css": "tailwindcss" },
+  "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"],
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true
+}
