@@ -4,7 +4,6 @@ import './global.css';
 
 import GoogleAnalytics from '@/shared/components/GoogleAnalytics';
 import CookieBanner from '@/shared/components/CookieBanner';
-
 import { CONSTANTS } from '@/shared/constants';
 
 const poppins = Poppins({

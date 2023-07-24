@@ -1,7 +1,5 @@
 'use client';
 
-import Link from 'next/link';
-
 import { useCookieConsent } from '../hooks/useCookieConsent';
 
 export default function CookieBanner() {
