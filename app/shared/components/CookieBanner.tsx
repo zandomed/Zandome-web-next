@@ -12,9 +12,8 @@ export default function CookieBanner() {
 
   return (
     <div
-      className={`fixed inset-x-0 bottom-0 mx-auto my-10 flex max-w-max flex-col 
-                        items-center justify-between gap-4 rounded-lg bg-gray-700 p-3 shadow sm:flex-row md:max-w-screen-sm  
-                         md:px-4`}
+      className="fixed inset-x-0 bottom-0 mx-auto my-10 flex max-w-max flex-col items-center justify-between 
+    gap-4 rounded-lg bg-gray-700 p-3 shadow sm:flex-row md:max-w-screen-sm md:px-4"
     >
       <div className="text-center">
         <p>
